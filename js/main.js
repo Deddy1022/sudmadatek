@@ -1,4 +1,4 @@
-let langue = localStorage.getItem("langue");
+let langue = sessionStorage.getItem("langue");
 const grid = document.querySelector('.grid');
 const gridEn = document.querySelector('#gridEn');
 const flex = document.querySelector('#flex');
@@ -9,12 +9,12 @@ const counting = document.querySelector('.counted');
 const change = document.querySelectorAll(".switch");
 langue === "français"? change.forEach(element => {
   element.textContent = "english";
-  localStorage.setItem("style", "block");
-  localStorage.setItem("styleEn", "none");
+  sessionStorage.setItem("style", "block");
+  sessionStorage.setItem("styleEn", "none");
 }): change.forEach(element => {
   element.textContent = "français";
-  localStorage.setItem("style", "none");
-  localStorage.setItem("styleEn", "block");
+  sessionStorage.setItem("style", "none");
+  sessionStorage.setItem("styleEn", "block");
 }) ;
 
 langue === "français"? document.querySelector('.btn--conditions').innerHTML += "<span><em>LES TERMES DE CONTRACT</em></span>":
@@ -73,12 +73,12 @@ displayLangue(data, langue)
 change.forEach(element => element.addEventListener("click", function(e) {
   e.preventDefault();
   console.log(this);
-  if(localStorage.getItem("langue") === "english") {
-    localStorage.setItem("langue", "fran\çais");
+  if(sessionStorage.getItem("langue") === "english") {
+    sessionStorage.setItem("langue", "fran\çais");
     displayLangue(data, "fran\çais");
     this.textContent =  "english";
   } else {
-    localStorage.setItem("langue", "english");
+    sessionStorage.setItem("langue", "english");
     displayLangue(data, "english");
     this.textContent = "fran\çais";
   }

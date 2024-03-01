@@ -1,8 +1,8 @@
 lang();
 function lang() {
-  if( window.localStorage )
+  if( window.sessionStorage )
   {
-    if( !localStorage.getItem('langue') )
+    if( !sessionStorage.getItem('langue') )
     {
       window.location.reload();
       charge()
@@ -10,8 +10,8 @@ function lang() {
   }
 }
 function charge() {
-  if (!localStorage.getItem("langue")) {
-    localStorage.setItem("langue", "français");
+  if (!sessionStorage.getItem("langue")) {
+    sessionStorage.setItem("langue", "français");
     change.forEach(element => element.textContent = "english");
   }
 }

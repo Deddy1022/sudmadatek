@@ -1,5 +1,5 @@
 const change = document.querySelectorAll(".switch");
-let langue = localStorage.getItem("langue");
+let langue = sessionStorage.getItem("langue");
 langue === "français"? change.forEach(element => {
   element.textContent = "english";
 }): change.forEach(element => {
@@ -9,8 +9,8 @@ const timelineTarget = document.querySelector(`#${langue}_lineTarget`);
 const lineTarget = document.querySelector('#lineTarget');
 const french =  document.querySelector('.french');
 const english =  document.querySelector('.english');
-french.style.display = localStorage.getItem("style");
-english.style.display = localStorage.getItem("styleEn");
+french.style.display = sessionStorage.getItem("style");
+english.style.display = sessionStorage.getItem("styleEn");
 const ddhamburger = document.querySelector('.dropdown-hamburger');
 const dropdownH = document.querySelector('.dropdown-content-hamburger');
 ddhamburger.onclick = function() {
@@ -324,23 +324,23 @@ function getSchedule(arr, lang) {
 change.forEach(element => element.addEventListener("click", function(e) {
   e.preventDefault();
   console.log(this);
-  if(localStorage.getItem("langue") === "français") {
+  if(sessionStorage.getItem("langue") === "français") {
     // french.style.display = "none";
-    localStorage.setItem("style", "none");
+    sessionStorage.setItem("style", "none");
     // english.style.display = "block";
-    localStorage.setItem("styleEn", "block");
-    localStorage.setItem("langue", "english");
+    sessionStorage.setItem("styleEn", "block");
+    sessionStorage.setItem("langue", "english");
     getSchedule(schedule, "english");
     this.textContent = "fran\çais";
     setTimeout(() => {
       location.reload();
     }, 300);
   } else {
-    localStorage.setItem("langue", "fran\çais");
+    sessionStorage.setItem("langue", "fran\çais");
     // french.style.display = "none";
-    localStorage.setItem("style", "block");
+    sessionStorage.setItem("style", "block");
     // english.style.display = "block";
-    localStorage.setItem("styleEn", "none");
+    sessionStorage.setItem("styleEn", "none");
     getSchedule(schedule, "français");
     this.textContent =  "english";
     setTimeout(() => {
