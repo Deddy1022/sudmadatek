@@ -95,7 +95,7 @@ function displayLangue(dat, lang) {
     grid.innerHTML += `
       <div class="entry">
         <div class="img">
-          <img src="../ion_icons/${language.image}.svg"></img>
+          <img src="./ion_icons/${language.image}.svg"></img>
         </div>
         <h2>${language.titre}</h2>
         <p>
@@ -114,56 +114,56 @@ const flexData = {
       titre: "DE BAOBAB À L'ÎLE DES PIRATES",
       texte: "Découvrez la faune exceptionnelle de l'ouest de Madagascar : lémuriens, tortues, crocodiles et caméléons dans leur habitat naturel.",
       image: "/bemaraha/bemaraha",
-      lien:'./baobab.html'
+      lien:'./main/baobab.html'
     },
     {
       group: "Groupe",
       titre: "MADAGASCAR AU COEUR DES HOMMES",
       texte: "Bienvenue dans le joyau préservé de la nature qu'est Madagascar, un paradis unique avec une biodiversité exceptionnelle.",
       image: "madagascar/jana",
-      lien:'./madagascar.html'
+      lien:'./main/madagascar.html'
     },
     {
       group: "Groupe",
       titre: "DIAM-BAZAHA",
       texte: "Embarquez pour une aventure immersive au cœur des hautes terres Malgaches, mêlant trek et exploration des merveilles naturelles et humaines.",
       image: "./madagascar/tsaranoro",
-      lien:'./diam_bazaha.html'
+      lien:'./main/diam_bazaha.html'
     },
     {
       group: "Groupe",
       titre: "TERRE DE LEGENDE DE MADAGASCAR",
       texte: "Expédition pour les aventuriers intrépides explorant le massif isolé du Makay et le deuxième sommet de Madagascar, sans compétences techniques particulières requises.",
       image: "DB",
-      lien:'./terre.html'
+      lien:'./main/terre.html'
     },
     {
       group: "Groupe",
       titre: "ESCAPADES EXOTIQUES",
       texte: `Le circuit "Escapades exotiques" invite à explorer à son rythme les réserves naturelles et l'univers des épices malgaches dans le nord du pays, idéal à partager en couple, en famille ou entre amis.`,
       image: "DB",
-      lien:'./escapade.html'
+      lien:'./main/escapade.html'
     },
     {
       group: "Groupe",
       titre: "TSIRIBIHINA ET TSINGY",
       texte: `Plongez dans une aventure hors du commun, découvrez la nature sauvage de l'ouest de Madagascar, explorez deux sites classés UNESCO, puis détendez-vous sur une plage paradisiaque.`,
       image: "./bemaraha/tsingy_1",
-      lien:'./tsingy.html'
+      lien:'./main/tsingy.html'
     },
     {
       group: "Groupe",
       titre: "VOLEURS DE ZEBUS",
       texte: `Si la plupart du temps les voyageurs partent plutôt pour la descente de la tsiribihina et les tsingy, nous on vous offre une alternative qui sort des sentiers battus.`,
       image: "./isalo/isalo",
-      lien:'./voleur_zebu.html'
+      lien:'./main/voleur_zebu.html'
     },
     {
       group: "Groupe",
       titre: "MORA MORA VAZAHA",
       texte: `Explorer à pied, notamment à Madagascar, offre une immersion authentique. Prendre son temps (le Mora Mora) permet d'apprécier pleinement les paysages variés. Idéal pour les amoureux de la nature et de la montagne.`,
       image: "./bemaraha/tsingy_2.",
-      lien:'./voleur_zebu.html'
+      lien:'./main/voleur_zebu.html'
     },
   ],
   "english": [
@@ -172,49 +172,49 @@ const flexData = {
       titre: "DE BAOBAB AND PIRATES ISLAND",
       texte: "Discover western Madagascar's wildlife: lemurs, turtles, crocodiles, chameleons. An unforgettable adventure awaits.",
       image: "/bemaraha/bemaraha",
-      lien:'./baobab.html'
+      lien:'./main/baobab.html'
     },
     {
       group: "Group",
       titre: "MADAGASCAR AU COEUR DES HOMMES",
       texte: "Discover Madagascar's unique biodiversity, with over 90% endemic species, promising an unforgettable adventure in the heart of authentic wildlife.",
       image: "madagascar/jana",
-      lien:'./madagascar.html'
+      lien:'./main/madagascar.html'
     },
     {
       group: "Group",
       titre: "DIAM-BAZAHA",
       texte: " Embark on an immersive adventure in the Malagasy highlands, combining trekking and hiking for a captivating exploration of natural and human wonders.",
       image: "./madagascar/tsaranoro",
-      lien:'./diam_bazaha.html'
+      lien:'./main/diam_bazaha.html'
     },
     {
       group: "Group",
       titre: "TERRE DE LEGENDE DE MADAGASCAR",
       texte: "Discover Makay massif: expedition for intrepid adventurers, unique experiences without technical skills.",
       image: "./madagascar/ranohira",
-      lien:'./terre.html'
+      lien:'./main/terre.html'
     },
     {
       group: "Group",
       titre: "TSIRIBIHINA AND TSINGY",
       texte: `Immerse in western Madagascar's wilderness: lemurs, turtles, crocodiles, chameleons. UNESCO sites, Indian Ocean beaches.`,
       image: "./bemaraha/tsingy_1",
-      lien:'./tsingy.html'
+      lien:'./main/tsingy.html'
     },
     {
       group: "Group",
       titre: "EXOTICS ESCAPADES",
       texte: `Discover Madagascar's unique concept of time through the "Exotic Escapes" tour, ideal for couples, families, or friends.`,
       image: "./madagascar/ifaty",
-      lien:'./escapade.html'
+      lien:'./main/escapade.html'
     },
     {
       group: "Groupe",
       titre: "MORA MORA VAZAHA",
       texte: `Exploring on foot, especially in Madagascar, provides an authentic immersion. Taking one's time (the Mora Mora) allows for full appreciation of the diverse landscapes. Ideal for nature and mountain lovers.`,
       image: "./bemaraha/tsingy_2.",
-      lien:'./voleur_zebu.html'
+      lien:'./main/voleur_zebu.html'
     },
   ]
 };
@@ -229,7 +229,7 @@ function getFlex(table, data) {
         <div class="container">
           <span>${text.group}</span>
           <div class="img">
-            <img src="../images/${text.image}.jpg" alt="">
+            <img src="./images/${text.image}.jpg" alt="">
           </div>
           <h2>${text.titre}</h2>
         </div>
