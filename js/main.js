@@ -229,7 +229,7 @@ function getFlex(table, data) {
         <div class="container">
           <span>${text.group}</span>
           <div class="img">
-            <img src="./images/${text.image}.jpg" alt="">
+            <img src="./images/${text.image}." + /jpg/i + "" alt="">
           </div>
           <h2>${text.titre}</h2>
         </div>
